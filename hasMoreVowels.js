@@ -7,7 +7,7 @@ const hasMoreVowels = word => {
             howManyVowels++
         }
     }
-    if (word.length - howManyVowels >= word.length / 2) {
+    if (howManyVowels <= word.length / 2) {
         return false
     }   else return true
 }
